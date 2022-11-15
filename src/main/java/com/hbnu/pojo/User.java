@@ -1,12 +1,20 @@
 package com.hbnu.pojo;
 
-public class User {
-    private String sno;
-    private String pwd;
-    private String name;
-    private int age;
-    private String sex;
+import com.alibaba.excel.annotation.ExcelIgnore;
+import com.alibaba.excel.annotation.ExcelProperty;
 
+public class User {
+    @ExcelProperty("学号")
+    private String sno;
+    @ExcelIgnore
+    private String pwd;
+    @ExcelProperty("姓名")
+    private String name;
+    @ExcelProperty("年龄")
+    private int age;
+    @ExcelProperty("性别")
+    private String sex;
+    @ExcelIgnore
     private int type;
 
     public User() {

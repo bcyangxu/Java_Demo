@@ -62,7 +62,8 @@ public class ShowMenu {
                     break;
                 case 5:
                     System.out.println("学生信息导出");
-                    ExportInfo.exportUserList();
+                    //ExportInfo.exportUserList();
+                    ExportInfo.exportUserListToExcel();
                     break;
                 case 6:
                     System.out.println("弹幕小工具");
@@ -90,7 +91,8 @@ public class ShowMenu {
                     break;
                 case 3:
                     System.out.println("个人信息导出");
-                    ExportInfo.exportUser(id);
+                    //ExportInfo.exportUser(id);
+                    ExportInfo.exportUserToExcel(id);
                     break;
                 case 4:
                     System.out.println("弹幕小工具");

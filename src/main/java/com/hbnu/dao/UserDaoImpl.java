@@ -49,11 +49,11 @@ public class UserDaoImpl implements UserDao{
             ResultSet resultSet = pst.executeQuery();
             while(resultSet.next()){
                 String id = resultSet.getString("id");
-                String pwd = resultSet.getString("pwd");
+                //String pwd = resultSet.getString("pwd");
                 String name = resultSet.getString("name");
                 int age = resultSet.getInt("age");
                 String sex = resultSet.getString("sex");
-                User user = new User(id,pwd,name,age,sex);
+                User user = new User(id,name,age,sex);
                 userList.add(user);
 
             }
